@@ -8,6 +8,8 @@ def get_feature_map(dataset):
         feature_list.append(ft.strip())
 
     return feature_list
+
+
 # graph is 'fully-connect'
 def get_fc_graph_struc(dataset):
     feature_file = open(f'./data/{dataset}/list.txt', 'r')
@@ -24,8 +26,9 @@ def get_fc_graph_struc(dataset):
         for other_ft in feature_list:
             if other_ft is not ft:
                 struc_map[ft].append(other_ft)
-    
+
     return struc_map
+
 
 def get_prior_graph_struc(dataset):
     feature_file = open(f'./data/{dataset}/features.txt', 'r')
@@ -48,10 +51,8 @@ def get_prior_graph_struc(dataset):
                 if other_ft is not ft and other_ft[-3] == ft[-3]:
                     struc_map[ft].append(other_ft)
 
-    
     return struc_map
 
 
 if __name__ == '__main__':
     get_graph_struc()
- 

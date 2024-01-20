@@ -89,7 +89,7 @@ def main():
     # print(test_df.values.shape)
 
 
-    train_df.to_csv('./train.csv')
+    train_df.to_csv('./data.csv')
     test_df.to_csv('./test.csv')
 
     f = open('./list.txt', 'w')

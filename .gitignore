@@ -3,5 +3,6 @@ results/
 logs/
 runs/
 temp/
+data/
 run_copy.sh
 __pycache__

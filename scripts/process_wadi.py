@@ -92,7 +92,7 @@ def main():
 
     train_df = train_df.iloc[2160:]
 
-    train_df.to_csv('./train.csv')
+    train_df.to_csv('./data.csv')
     test_df.to_csv('./test.csv')
 
     f = open('./list.txt', 'w')
